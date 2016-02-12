@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp(".*\\.wordpress\\.com/wp-admin/post(-new)?.*") {
+
+  #prompt-new-editor {
+    display: none !important;
+  }
+
+}

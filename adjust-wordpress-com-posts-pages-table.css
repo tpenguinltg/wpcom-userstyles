@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp("https://[^.]+.wordpress.com/wp-admin/edit.php.*") {
+
+  #posts-filter table.diff, #posts-filter table.fixed {
+    table-layout: auto;
+  }
+
+}

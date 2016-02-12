@@ -1,0 +1,21 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("https://wordpress.com/stats") {
+
+  .switch-stats {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    z-index: 1000;
+  }
+
+  .switch-stats .button {
+    background-color: #0085BE;
+    color: #FFFFFF;
+  }
+
+  .switch-stats .button:hover {
+    background-color: #2697C7;
+  }
+
+}

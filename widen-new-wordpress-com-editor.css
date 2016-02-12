@@ -1,0 +1,45 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp("https://wordpress.com/(post|page)/.*") {
+
+  .post-editor__sidebar {
+    flex: none;
+    position: absolute;
+    width: 269px;
+    background-color: #E9EFF3;
+    box-shadow: 5px 5px 5px #C8D7E1;
+  }
+  .post-editor__sidebar:hover {
+    z-index: 179;
+  }
+
+  .post-editor__content {
+    box-shadow: -5px 0 10px #C8D7E1;
+    margin-left: 64px;
+  }
+
+  .sticky-panel__content {
+    top: 0 !important;
+  }
+
+  .editor-ground-control .sticky-panel__content:before {
+    position: relative;
+  }
+
+  .editor-ground-control .sticky-panel__content {
+    padding-bottom: 0;
+  }
+  .editor-ground-control.is-sticky .sticky-panel__content {
+    position: relative;
+    z-index: auto;
+    padding-bottom: 0;
+  }
+
+  .sticky-panel__spacer {
+    height: 0 !important;
+  }
+
+  .editor .tinymce {
+    padding: 30px 30px;
+  }
+}
