@@ -3,43 +3,34 @@
 @-moz-document regexp("https://wordpress.com/(post|page)/.*") {
 
   .post-editor__sidebar {
-    flex: none;
-    position: absolute;
-    width: 269px;
-    background-color: #E9EFF3;
-    box-shadow: 5px 5px 5px #C8D7E1;
+    width: 70px !important;
+    overflow-x: hidden !important;
+    z-index: 9;
   }
   .post-editor__sidebar:hover {
-    z-index: 179;
+    width: 272px !important;
+  }
+  .post-editor__sidebar > * {
+    width: 256px !important;
+  }
+  .post-editor__sidebar:hover > * {
+    width: 100% !important;
+    transition: width 0s 0.15s !important;
   }
 
   .post-editor__content {
-    box-shadow: -5px 0 10px #C8D7E1;
-    margin-left: 64px;
+    margin-left: 64px !important;
+    padding: 32px !important;
   }
 
   .sticky-panel__content {
     top: 0 !important;
   }
 
-  .editor-ground-control .sticky-panel__content:before {
-    position: relative;
+  .editor__header, .editor .mce-container-body {
+    width: 95% !important;
   }
-
-  .editor-ground-control .sticky-panel__content {
-    padding-bottom: 0;
-  }
-  .editor-ground-control.is-sticky .sticky-panel__content {
-    position: relative;
-    z-index: auto;
-    padding-bottom: 0;
-  }
-
-  .sticky-panel__spacer {
-    height: 0 !important;
-  }
-
   .editor .tinymce {
-    padding: 30px 30px;
+    width: 100% !important;
   }
 }
